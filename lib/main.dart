@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gemini/flutter_gemini.dart';
+import 'package:myapp/constants/api_key.dart';
 
 import 'presentation/home_page.dart';
 
 void main() {
-  Gemini.init(apiKey: "AIzaSyAh2kK27VjLWNwfYl8lS9nQdNPsQlQutx8");
+  Gemini.init(apiKey: ApiKey.api_key);
   runApp(const RootApp());
 }
 
